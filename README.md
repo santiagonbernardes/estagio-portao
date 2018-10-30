@@ -22,8 +22,11 @@ Para tornar a porta mais segura, ela foi equipada com uma detecção de obstácu
 A entrada do programa será uma String em que cada caracter representa o evento ocorrido em um segundo, sendo os seguintes possíveis caracteres:
 
 '.' - Nenhum evento
+
 'P' - Botão pressionado
+
 'O' - Obstáculo detectado
+
 
 Por exemplo, "..P...." significa que nada aconteceu por 2 segundos, então o botão foi pressionado e não houve qualquer outro evento a seguir.
 
