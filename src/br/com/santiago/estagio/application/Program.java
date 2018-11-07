@@ -13,7 +13,7 @@ public class Program {
 		//System.out.println(controller.execute("P..O..").equals("123210"));
 		//System.out.println(controller.execute("P..P...PO...").equals("123333343210"));
 		//System.out.println(controller.execute("P...O.O.P...P..").equals("123432344444555"));
-		//System.out.println(controller.execute("P.....P.P..P...").equals("123455433332100"));
+		//System.out.println(controller.execute("P.....P.P..P...").equals("123455433332100"));	
 
 	}
 

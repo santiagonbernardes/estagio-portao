@@ -1,16 +1,16 @@
 package br.com.santiago.estagio.entities;
 
 import br.com.santiago.estagio.estado.Estado;
-import br.com.santiago.estagio.estado.Fechado;
 
 public class Portao {
 
 	private Estado estadoAtual;
 	private Estado estadoAnterior;
-	private int posicao;
+	private Integer posicao;
 
 	public Portao() {
-		estadoAtual = new Fechado(this);
+		posicao = 0;
+		estadoAtual = Estado.FECHADO;
 		estadoAnterior = null;
 	}
 
@@ -30,8 +30,12 @@ public class Portao {
 		this.estadoAnterior = estadoAnterior;
 	}
 
-	public int getPosicao() {
+	public Integer getPosicao() {
 		return posicao;
+	}
+
+	public void setPosicao(Integer posicao) {
+		this.posicao = posicao;
 	}
 
 	public void setPosicao(int posicao) {

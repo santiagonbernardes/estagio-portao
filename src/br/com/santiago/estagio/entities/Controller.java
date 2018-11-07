@@ -9,9 +9,9 @@ public class Controller {
 	}
 
 	public String execute(String string) {
-		StringBuilder sb = new StringBuilder();
+		StringBuilder sb = new StringBuilder();		
 		for (int i = 0; i < string.length(); i++) {
-			portao.getEstadoAtual().execute(string.charAt(i));
+			portao.getEstadoAtual().execute(string.charAt(i), portao);
 			sb.append(portao.getPosicao());
 		}
 		return sb.toString();
